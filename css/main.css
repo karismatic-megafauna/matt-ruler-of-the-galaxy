@@ -1,0 +1,50 @@
+body{
+  background: rgb(167, 78, 78);
+  margin: 0px;
+}
+
+h1{
+  font-family: 'Helvetica', 'Rockwell', 'sans-serif';
+  font-size: 4em;
+  text-transform: capitalize;
+}
+
+.title{
+  width: 100%;
+  color: #555;
+  background: rgb(240, 243, 198);
+  padding: 60px 0px;
+}
+
+.center{
+  margin: 40px auto;
+  text-align: center;
+  width: 50%;
+}
+
+.face{
+  width: 300px;
+}
+
+.face:hover{
+  animation-name: rotateDaFace;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotateDaFace;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+/*Animations*/
+
+@-webkit-keyframes rotateDaFace {
+  from{
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+  }
+}
